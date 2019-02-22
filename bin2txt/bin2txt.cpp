@@ -337,7 +337,7 @@ int main(int argc, char* argv[])
 #ifdef _DEBUG
     iCount = 193;  //右晩8.4
 #endif
-    my_printf("    tc offset %u\r\n", iCount);
+    my_printf("    tc offset: %u\r\n", iCount);
     TreasureClassEx_SetOffset(iCount);
     iCount = 0;
 
@@ -400,9 +400,9 @@ int main(int argc, char* argv[])
     //enProcessModule = MODULE_ID_DEFINE(setitems);
 
     my_printf("Args:\r\n");
-    my_printf("    template path %s\r\n", acTemplatePath);
-    my_printf("    bin path %s\r\n", acBinPath);
-    my_printf("    output path %s\r\n", acTxtPath);
+    my_printf("    template path: %s\r\n", acTemplatePath);
+    my_printf("    bin path: %s\r\n", acBinPath);
+    my_printf("    output path: %s\r\n", acTxtPath);
     if ( EN_MID_MAX == enProcessModule )
     {
         my_printf("    all module\r\n");
@@ -547,12 +547,12 @@ int main(int argc, char* argv[])
 
     if ( 0 < iFail )
     {
-        my_error("finished。。。total %d。。。success %d。。。failed %d!\r\n", iCount, iSuccess, iFail);
+        my_error("finished... total %d... success %d... failed %d!\r\n", iCount, iSuccess, iFail);
         my_error("Failed list:\r\n%s\r\n", acFailedList);
     }
     else
     {
-        my_printf("finished。。。total %d。。。success %d!\r\n", iCount, iSuccess);
+        my_printf("finished... total %d... success %d!\r\n", iCount, iSuccess);
     }
     my_printf("press RETURN to exit!\r\n");
 
